@@ -16,6 +16,7 @@ app.post("/",function(req,res){
     var email = req.body.email;
 
     console.log(firstName, lastName, email);
+    res.send("<h1>Success</h1>");
 });
 
 app.listen(process.env.PORT || 3000,function(){
